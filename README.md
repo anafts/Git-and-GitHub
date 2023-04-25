@@ -30,26 +30,53 @@
 ![Captura de Pantalla 2023-04-25 a la(s) 08 54 09](https://user-images.githubusercontent.com/106173948/234271945-0f889ddf-0df4-4c3c-9b8c-62d626861ec8.png)
 
 
+<p> Por último, você será direcionado para essa tela. Não feche pois vamos precisar dessas informações para enviar os arquivos para esse repositório. 
+</p>
 
+![Captura de Pantalla 2023-04-25 a la(s) 09 15 49](https://user-images.githubusercontent.com/106173948/234286549-5e0e8f58-b187-4bb8-afb5-26429279f758.png)
 
+OBS: vamos precisar do comando "git remote add origin https://github.com/anafts/repo-ex.git"
 
+ 
+<h3> Agora vamos configurar o Git na sua máquina por meio do terminal,
+para isso você precisa cadastrar apenas duas informações: 
+</h3>
 
 ```bash
-# Clone este repositório
-$ git init
+# Digite o seu nome no GitHub
+$ git config --global user.name "nome"
 
-# Acesse a pasta do projeto no terminal/cmd
-$ git add .
+# Digite o seu email no Github
 
-# Instale as dependências
-$ git remote add origin https://github.com/anafts/repo-ex.git
+$ git config --global user.email "email"
 
-# Execute a aplicação em modo de desenvolvimento
-$ git commit -m "first commit"
+# Verifique se as suas informações de usuário foram configuradas corretamente
 
-# O servidor inciará na porta:80 - acesse http://localhost:80 
-
-$ git push -u origin main
-# O servidor inciará na porta:80 - acesse http://localhost:80 
+$ git config --list
 
 ```
+
+<h3> Agora com o GIT configurado, vamos aprender a enviar os arquivos para o Github. </h3>
+
+<p> Para começar, navegue até a pasta dos arquivos em seu terminal usando o comando "cd" e o caminho para a pasta </p>
+
+```bash
+# Inicialize um novo repositório Git
+$ git init
+
+# Adicione todos os arquivos para o repositório
+$ git add .
+
+# Adicione o link do repositório remoto do GitHub, você pode encontar o seu naquela última tela do GitHub, apenas copie e cole
+$ git remote add origin https://github.com/anafts/repo-ex.git
+
+# Faça o commit inicial dos arquivos
+$ git commit -m "first commit"
+
+# Envie os arquivos para o repositório remoto no GitHub
+$ git push -u origin main
+```
+
+<h3> Depois de executar esses comandos, seus arquivos serão enviados para o repositório remoto no GitHub. Quando você atualizar aquela última tela do GitHub, o repositório já terá todos os arquivos enviados </h3>
+
+![Captura de Pantalla 2023-04-25 a la(s) 09 55 52](https://user-images.githubusercontent.com/106173948/234288795-610105fd-f1af-41e3-8e38-a24e909b5ab6.png)
