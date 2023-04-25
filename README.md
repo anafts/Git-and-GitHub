@@ -5,14 +5,17 @@
 
 <ol>
 
-<li> Instale o Git na sua máquina, para isso acesse o [site oficial] (https://git-scm.com/), baixe e instale de acordo com o seu sistema operacional. </li>
+<li> Instale o Git na sua máquina, para isso acesse o <a href="https://git-scm.com/"> site oficial </a>, baixe e instale de acordo com o seu sistema operacional. </li>
 
-<li> Instale um terminal, para usar o GIT você precisará executar comandos específicos na linha de comando. Eu particularmente gosto de usar o [Hyper] (https://hyper.is/), mas você pode usar o terminal padrão do seu sistema operacional. </li>
+<li> Instale um terminal, para usar o GIT você precisará executar comandos específicos na linha de comando. Eu particularmente gosto de usar o <a href="https://hyper.is/">Hyper</a> , mas você pode usar o terminal padrão do seu sistema operacional. </li>
 
 <li> Além disso, é necessário que tenha familiaridade com a linha de comando, sendo importante ter noção básica de como navegar pelo terminal e executar comandos. </li>
 
-<li> Por último, é necessário ter uma conta no [GitHub](https://github.com/) como você está vendo esse tutorial pelo GitHub, suponho que você já tenha.  </li>
+<li> Por último, é necessário ter uma conta no <a href="https://github.com/"> GitHub</a> como você está vendo esse tutorial pelo GitHub, suponho que você já tenha. </li>
+
 </ol>
+
+<hr>
 
 <h3> Vamos lá? a forma mais fácil seria criando o repositório pelo próprio github </h3>
 
@@ -20,7 +23,7 @@
 
 ![Captura de Pantalla 2023-04-25 a la(s) 08 22 57](https://user-images.githubusercontent.com/106173948/234270985-969740db-64f6-47f3-9744-ef442516c126.png)
 
-<p> Em seguida você será direcionado para essa tela, adicione um nome para o repositório abaixo de “​​Repository name” e não se preocupe em adicionar algo na parte de “Description”, você poderá fazer isso depois. </p>
+<p> Em seguida você será direcionado para essa tela, adicione um nome para o repositório abaixo de “​​Repository name”, igual no exemplo, e não se preocupe em adicionar algo na parte de “Description”, você poderá fazer isso depois. </p>
 <p> Não altere nada e clique na opção “Create repository” em azul no final da tela.</p>
 
 
@@ -29,7 +32,6 @@
 
 
 
- 
 
 
 ```bash
@@ -37,14 +39,17 @@
 $ git init
 
 # Acesse a pasta do projeto no terminal/cmd
-$ git commit -m "first commit"
+$ git add .
 
 # Instale as dependências
 $ git remote add origin https://github.com/anafts/repo-ex.git
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm start
+$ git commit -m "first commit"
 
+# O servidor inciará na porta:80 - acesse http://localhost:80 
+
+$ git push -u origin main
 # O servidor inciará na porta:80 - acesse http://localhost:80 
 
 ```
